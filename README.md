@@ -1,1 +1,1 @@
-# erudite web game
+# Erudite web game
