@@ -1,10 +1,12 @@
-﻿@page
+@page
 @model IndexModel
-@{
-  ViewData["Title"] = "Home page";
+@section Head {
+  <link rel="icon" href="~/robo-erudite/favicon.ico">
+  <link href="~/robo-erudite/css/app.css" rel="stylesheet" asp-append-version="true">
 }
 @section Scripts {
   <script src="~/robo-erudite/js/chunk-vendors.js" asp-append-version="true"></script>
   <script src="~/robo-erudite/js/app.js" asp-append-version="true"></script>
 }
 <div id="app"></div>
+

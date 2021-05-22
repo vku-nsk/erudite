@@ -12,6 +12,8 @@
 **/*.dbmdl
 **/*.jfm
 **/azds.yaml
+# exclude front-end source code
+robo-erudite
 **/bin
 **/charts
 **/docker-compose*

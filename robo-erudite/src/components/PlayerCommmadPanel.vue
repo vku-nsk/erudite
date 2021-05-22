@@ -203,6 +203,7 @@ export default defineComponent({
     flex: 0 0 4rem;
     min-height: 4rem;
     align-items: flex-end;
+    padding: 1px 0px;
   }
 
   .buttons-column {

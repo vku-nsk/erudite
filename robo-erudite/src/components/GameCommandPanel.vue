@@ -1,10 +1,5 @@
 <template>
   <div class="buttons-container">
-    <command-button
-      :disabled="!finishEnabled"
-      @command="$emit('finish-the-game')">
-      <span>Завершить</span>
-    </command-button>
     <div class="mini-btn-container">
       <command-button class="mini-button"
         :class="{'btn-highlight': gridSize === 15}" 
@@ -19,6 +14,11 @@
         13
       </command-button>
     </div>
+    <command-button
+      :disabled="!finishEnabled"
+      @command="$emit('finish-the-game')">
+      <span>Завершить</span>
+    </command-button>
   </div>
 </template>
 
@@ -92,7 +92,7 @@ export default defineComponent({
 
   .buttons-container {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     gap: 0.2rem;
   }
 
