@@ -69,11 +69,6 @@ export default defineComponent({
 .buttons-container {
   display: -webkit-flex;
   display: flex;
-  font-size: 1.5rem;
-}
-
-.btn-command {
-  font-size: 1.5rem;
 }
 
 .mini-btn-container{
@@ -93,7 +88,9 @@ export default defineComponent({
   .buttons-container {
     flex-direction: column;
     align-items: center;
-    gap: 0.2rem;
+    font-size: 2vmax;
+    padding-top: 0.1em;
+    gap: 0.2em;
   }
 
   .mini-btn-container{
@@ -107,7 +104,8 @@ export default defineComponent({
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-top: 0.5rem;
+    font-size: 2vmax;
+    margin-top: 0.2em;
   }
 
   .mini-btn-container{
@@ -115,6 +113,5 @@ export default defineComponent({
     width: 100%;
   }
 } /* @media (orientation: portrait) */
-
 
 </style>

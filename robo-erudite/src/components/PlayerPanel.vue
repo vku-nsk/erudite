@@ -296,7 +296,7 @@ export default defineComponent({
     padding-left: 4px;
     padding-right: 4px;
     align-items: center;
-    /* min-height: 24.5rem; */
+    gap: 0.5em;
   }
 
   #player1 .letters-container {

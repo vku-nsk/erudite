@@ -161,14 +161,14 @@ export default defineComponent({
 }
 
 .btn-command {
-  font-size: 1.5rem;
+  font-size: inherit;
+}
+
+.buttons-container {
+  font-size: 2vmax;
 }
 
 @media (orientation: landscape){
-
-  .buttons-container {
-    width: 100%;
-  }
 
   .buttons-row {
     display: none;

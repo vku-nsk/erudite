@@ -828,6 +828,17 @@ body {
 }
 
 @media (orientation: landscape){
+  :root{
+    --cell-13: calc(7.75vh - 1px);  
+    --cell-15: calc(6.75vh - 1px);  
+    /* --p-panel-width: calc((100vw - 100vh)/2 - 6px); */
+  }
+
+  html,
+  body {
+    font-size: 2.5vh;
+  }
+
   .game-container {
     flex-direction: row;
     justify-content: center;
@@ -837,20 +848,30 @@ body {
     flex-direction: column;
     border-right-color: green;
     border-right-style:solid;
-    border-right-width: 4px;
-    min-width: 9rem;
+    border-right-width: 2px;
+    /* min-width: var(--p-panel-width); */
   }
 
   .p1-panel {
     flex-direction: column;
     border-left-color: blue;
     border-left-style: solid;
-    border-left-width: 4px;
-    min-width: 9rem;
+    border-left-width: 2px;
+    /* min-width: var(--p-panel-width); */
   }
 }
 
 @media (orientation: portrait){
+  :root{
+    --cell-13: calc(min(7.69vw, 5vh) - 1px);  
+    --cell-15: calc(min(6.66vw, 4.35vh) - 1px);  
+  }
+
+  html,
+  body {
+    font-size: min(2.5vw, 1.875vh);
+  }
+
   .game-container {
     flex-direction: column;
     justify-content: center;

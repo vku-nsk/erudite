@@ -123,42 +123,43 @@ export default defineComponent({
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
-  -webkit-flex: 0 0 2.5rem;
-  -ms-flex: 0 0 2.5rem;
-  flex: 0 0 2.5rem;
-  height: 2.5rem;
+  -webkit-flex: 0 0 var(--cell-15);
+  -ms-flex: 0 0 var(--cell-15);
+  flex: 0 0 var(--cell-15);
+  height: var(--cell-15);
 }
 
 .play-field-cell-15 {
-  -webkit-flex: 0 0 2.5rem;
-  -ms-flex: 0 0 2.5rem;
-  flex: 0 0 2.5rem;
-  height: 2.5rem;
-  width: 2.5rem;
+  -webkit-flex: 0 0 var(--cell-15);
+  -ms-flex: 0 0 var(--cell-15);
+  flex: 0 0 var(--cell-15);
+  height: var(--cell-15);
+  width: var(--cell-15);
   font-size: 1.8rem;
-  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-right: 1px solid rgba(128, 128, 128, 0.5);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
 }
 
 .play-field-row-13 {
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
-  -webkit-flex: 0 0 2.884rem;
-  -ms-flex: 0 0 2.884rem;
-  flex: 0 0 2.884rem;
-  height: 2.884rem;
+  -webkit-flex: 0 0 var(--cell-13);
+  -ms-flex: 0 0 var(--cell-13);
+  flex: 0 0 var(--cell-13);
+  height: var(--cell-13);
 }
 
 .play-field-cell-13 {
-  -webkit-flex: 0 0 2.884rem;
-  -ms-flex: 0 0 2.884rem;
-  flex: 0 0 2.884rem;
-  height: 2.884rem;
-  width: 2.884rem;
+  -webkit-flex: 0 0 var(--cell-13);
+  -ms-flex: 0 0 var(--cell-13);
+  flex: 0 0 var(--cell-13);
+  height: var(--cell-13);
+  width: var(--cell-13);
   font-size: 2rem;
-  border: 1px solid rgba(128, 128, 128, 0.4);
+  border-right: 1px solid rgba(128, 128, 128, 0.5);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
 }
-
 
 .cell-background-default {
   background-color: white;
@@ -178,6 +179,17 @@ export default defineComponent({
 
 .cell-background-p1-fix {
   background-color: rgba(173, 216, 230, 0.7);
+}
+
+@media (orientation: portrait) {
+  .play-field-cell-13:first-child {
+    border-left: 1px solid rgba(128, 128, 128, 0.5);
+  }
+
+  .play-field-cell-15:first-child {
+    border-left: 1px solid rgba(128, 128, 128, 0.5);
+  }
+
 }
 
 </style>

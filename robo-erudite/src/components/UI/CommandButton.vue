@@ -20,8 +20,8 @@ export default defineComponent({
 
 .btn-command {
   display: block;
-  /* background-color: lightgrey; */
   text-align:center;
+  font-size: inherit;
   border-radius: 6px;
 }
 </style>
