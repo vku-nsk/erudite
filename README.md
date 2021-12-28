@@ -1,2 +1,3 @@
-# Erudite web game
-Mobile: optimized media queries
+## Браузерная игра по составлению слов.
+После загрузки словаря сервер не используется
+
